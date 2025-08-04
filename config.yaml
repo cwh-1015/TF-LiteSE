@@ -1,0 +1,56 @@
+# gpu config
+accelerator: gpu
+devices: [0]
+
+# log config
+log_dir: ./xiaorong_log
+resume: null  # if want to resume, specify ckpt path
+
+# dataset config
+dataset_config:
+  batch_size: 4
+  cut_len: 32000  # length of training samples: 2s
+  num_workers: 8  # dataloader workers
+  train_src_dir: Datasets/wav_noisy
+  train_tgt_dir: Datasets/wav_clean
+  val_src_dir: Datasets/test_noisy
+  val_tgt_dir: Datasets/test_clean
+  test_src_dir: Datasets/test_noisy
+  test_tgt_dir: Datasets/test_clean
+
+
+
+# training config
+max_epochs: 100
+val_check_interval: 0.5  # validate every 0.5 epochs
+gradient_clip_val: 5.0
+g_opt:
+  lr: 5.0e-4
+  betas: [0.8, 0.99]
+d_opt:
+  lr: 5.0e-4
+  betas: [0.8, 0.99]
+g_sch:
+  step_size: 2
+  gamma: 0.98
+  verbose: true
+d_sch:
+  step_size: 2
+  gamma: 0.98
+  verbose: true
+
+# model config and loss weights
+model_config:
+  num_channels: 16
+  n_blocks: 2
+  n_fft: 512
+  hop_length: 256
+  compress_factor: 0.3
+weights:
+  complex: 0.1
+  mag: 0.9
+  adv: 0.01
+  si_sdr: 0.1
+  time: 0.2
+  pesq: 0.02
+  stoi: 0.05
