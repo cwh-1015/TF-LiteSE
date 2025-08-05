@@ -58,7 +58,7 @@ python test.py --config ./config.yaml --ckpt_path path/to/checkpoint.ckpt --save
 Our model is composed of three main parts:
 
 📁 Project Structure
-
+```
 ├── Datasets/             # VoiceBank+DEMAND dataset
 ├── models/               # Model architecture definitions
 │   └── discriminator/    (Optional) Used for discriminator loss
@@ -74,7 +74,7 @@ Our model is composed of three main parts:
 ├── utils/                # Helper functions
 ├── requirements.txt
 └── README.md
-
+```
 🔊Samples
 
 
