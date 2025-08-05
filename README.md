@@ -26,7 +26,8 @@ Create a virtual environment and activate it:
 ```bash
 git clone [https://anonymous.4open.science/r/repo-9BE0](https://github.com/cwh-1015/repo)
 cd repo
-conda create -n SEN python=3.7
+conda create -n SEN python=3.10
+conda activate SEN
 conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
@@ -59,33 +60,19 @@ Our model is composed of three main parts:
 📁 Project Structure
 bash
 ├── Datasets/             # VoiceBank+DEMAND dataset
-
 ├── models/               # Model architecture definitions
-
 │   └── discriminator/    (Optional) Used for discriminator loss
-
 │   └── DP/               # Differentiable PESQ loss
-
 │   └── linformer/        # Model subject
-
 │   └── our_model.py
-
 ├── log/                  # Train log
-
 ├── result/               # Inference result
-
 ├── train.py              # Training entry point
-
 ├── test.py               # Evaluation script
-
 ├── config.yaml           # Main configuration
-
 ├── data/                 # Dataset loading and preprocessing
-
 ├── utils/                # Helper functions
-
 ├── requirements.txt
-
 └── README.md
 
 🔊Samples
