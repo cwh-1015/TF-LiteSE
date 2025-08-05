@@ -1,8 +1,8 @@
 # Anonymous Submission: LTS-NET:A Lightweight Time-frequency Domain Speech Enhancement Network.(Anonymous for Review)
 
-Abstract
+📄 Abstract
 
-> 📄 The goal of speech enhancement is to recover the ideal clean‐speech components from a noisy signal, which not only significantly improves listening comfort in real‐world noisy environments but also provides more reliable inputs for downstream tasks such as automatic speech recognition and speaker identification. However, mobile and IoT devices are often constrained in terms of computation, memory, and power, making the deployment of large‐scale deep neural networks impractical. To address this challenge, we propose **LTS-SEN**, a lightweight time-frequency domain speech enhancement network that achieves real‐time inference while maintaining competitive performance. Our design includes a global time–frequency downsampling module and a dual‐path time–frequency recurrent module, which work in concert to capture global time–frequency features while preserving low‐frequency details. With only 31K parameters, our model achieves a PESQ score of 3.21 on the VoiceBank--DEMAND dataset and a real‐time factor of RTF=0.013, demonstrating its practicality and generalizability in resource‐constrained environments.
+> The goal of speech enhancement is to recover the ideal clean‐speech components from a noisy signal, which not only significantly improves listening comfort in real‐world noisy environments but also provides more reliable inputs for downstream tasks such as automatic speech recognition and speaker identification. However, mobile and IoT devices are often constrained in terms of computation, memory, and power, making the deployment of large‐scale deep neural networks impractical. To address this challenge, we propose **LTS-SEN**, a lightweight time-frequency domain speech enhancement network that achieves real‐time inference while maintaining competitive performance. Our design includes a global time–frequency downsampling module and a dual‐path time–frequency recurrent module, which work in concert to capture global time–frequency features while preserving low‐frequency details. With only 31K parameters, our model achieves a PESQ score of 3.21 on the VoiceBank--DEMAND dataset and a real‐time factor of RTF=0.013, demonstrating its practicality and generalizability in resource‐constrained environments.
 ---
 ⚠️Notice
 > This code is released as part of an anonymous submission to a peer-reviewed conference. Author and affiliation information has been removed for double-blind review.
@@ -89,7 +89,7 @@ Our model is composed of three main parts:
     <tbody>
       <!-- 第一行示例 -->
       <tr>
-        <td>[p232_011](sample/clean/p232_011.wav)</td>
+        <td><audio controls src="sample/noisy/p232_011.wav"></audio></td>
         <td><audio controls src="sample/enhance/p232_011.wav"></audio></td>
         <td><audio controls src="sample/clean/p232_011.wav"></audio></td>
       </tr>
