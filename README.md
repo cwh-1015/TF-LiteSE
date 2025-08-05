@@ -24,11 +24,10 @@ It achieves strong perceptual performance with low computational cost.
 Create a virtual environment and activate it:
 
 ```bash
-git clone [https://anonymous.4open.science/r/repo-9BE0](https://github.com/cwh-1015/repo)
+git clone https://anonymous.4open.science/r/repo-9BE0.git
 cd repo
-conda create -n SEN python=3.10
+conda create -n SEN python=3.7
 conda activate SEN
-conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
 
