@@ -76,25 +76,14 @@ Our model is composed of three main parts:
 🔊Samples
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>VoiceBank+DEMAND Samples</title>
-  <style>
-    table { border-collapse: collapse; width: 100%; }
-    th, td { text-align: center; padding: 8px; border: 1px solid #ccc; }
-    th { background: #f8f8f8; }
-    audio { width: 150px; }
-  </style>
-</head>
 <body>
-
-  <h1>Voice Bank + DEMAND</h1>
+  <h2>Voice Bank + DEMAND</h2>
   <table>
     <thead>
       <tr>
         <th>Sample Name</th>
         <th>Noisy</th>
-        <th>CMGAN</th>
+        <th>Enhance</th>
         <th>Clean</th>
       </tr>
     </thead>
