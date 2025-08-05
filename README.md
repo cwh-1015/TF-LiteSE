@@ -63,8 +63,8 @@ Our model is composed of three main parts:
 ├── models/               # Model architecture definitions
 │   └── discriminator/    (Optional) Used for discriminator loss
 │   └── DP/               # Differentiable PESQ loss
-│   └── linformer/        # Model subject
-│   └── our_model.py
+│   └── lts/               # Our model
+│   └── model.py
 ├── log/                  # Train log
 ├── result/               # Inference result
 ├── train.py              # Training entry point
