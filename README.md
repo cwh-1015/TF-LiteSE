@@ -1,8 +1,8 @@
 # repo
 
-# Anonymous Submission: LiSenNet (Anonymous for Review)
+# Anonymous Submission: LTS-NET (Anonymous for Review)
 
-This repository contains the official implementation of **LTS-NET**, a lightweight and effective speech enhancement network designed for real-time deployment on edge devices.
+This repository contains the official implementation of **LTS-NET**, A Lightweight Time-frequency Domain Speech Enhancement Network.
 
 > 📄 This code is released as part of an anonymous submission to a peer-reviewed conference. Author and affiliation information has been removed for double-blind review.
 
