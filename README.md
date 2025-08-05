@@ -1,5 +1,3 @@
-# repo
-
 # Anonymous Submission: LTS-NET:A Lightweight Time-frequency Domain Speech Enhancement Network.(Anonymous for Review)
 
 Abstract
