@@ -163,4 +163,4 @@ This project is released for academic use only.
 Please reach out through the submission item if you have questions or suggestions.
 
 Reference<br>
-[LiSenNet](https://github.com/hyyan2k/LiSenNet)、[LinearFormer]([https://github.com/hyyan2k/LiSenNet](https://github.com/lucidrains/linear-attention-transformer)、[torch-pesq](https://github.com/audiolabs/torch-pesq)
+[LiSenNet](https://github.com/hyyan2k/LiSenNet)、[LinearFormer](https://github.com/lucidrains/linear-attention-transformer)、[torch-pesq](https://github.com/audiolabs/torch-pesq)
