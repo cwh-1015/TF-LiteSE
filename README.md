@@ -32,7 +32,10 @@ pip install -r requirements.txt
 ```
 
 📥 Data preparation
-Download and extract the VoiceBank+DEMAND dataset. Resample all wav files to 16kHz, and move the [clean and noisy wavs](https://datashare.ed.ac.uk/handle/10283/1942) to Datasets/wavs_clean and Datasets/wavs_noisy, the test wavs to Datasets/test_clean and Datasets/test_noisy. respectively. You can also directly download the downsampled [16kHz dataset](https://drive.google.com/drive/folders/19I_thf6F396y5gZxLTxYIojZXC0Ywm8l)(⚠️notice: Using this requires manually selecting two speakers as the test set.)
+
+Download and extract the VoiceBank+DEMAND dataset. Resample all wav files to 16kHz, and move the [clean and noisy wavs](https://datashare.ed.ac.uk/handle/10283/1942) to /Datasets/wavs_clean and /Datasets/wavs_noisy, the test wavs to /Datasets/test_clean and /Datasets/test_noisy. 
+
+respectively. You can also directly download the downsampled [16kHz dataset](https://drive.google.com/drive/folders/19I_thf6F396y5gZxLTxYIojZXC0Ywm8l)(⚠️notice: Using this requires manually selecting two speakers as the test set.)
 
 
 🏋️ Training
@@ -43,32 +46,15 @@ Then run:
 ```bash
 python train.py --config ./config.yaml
 ```
-Training logs and checkpoints will be saved under logdir.
+Training logs and checkpoints will be saved under /log.
 
-🎧 Evaluation
-To evaluate a trained checkpoint:
+🎧 Inference
+```bash
+python test.py --config ./config.yaml --ckpt_path path/to/checkpoint.ckpt --save_enhanced path/to/savedir
+```
 
-bash
-python test.py --config ./config.yaml --ckpt_path path/to/checkpoint.ckpt
-To also save enhanced audio samples:
-
-bash
-python test.py --config ./config.yaml --ckpt_path path/to/checkpoint.ckpt --save_enhanced ./enhanced_audio/
-🔧 Configuration Example (config.yaml)
-yaml
-devices: [0]
-logdir: ./exp/lisennet
-data:
-  train_dir: ./data/train
-  val_dir: ./data/val
-  test_dir: ./data/test
-  sr: 16000
-batch_size: 16
-learning_rate: 1e-4
-max_epochs: 100
-num_workers: 4
 🧠 Model Architecture
-The network is composed of three main parts:
+Our model is composed of three main parts:
 
 📁 Project Structure
 bash
