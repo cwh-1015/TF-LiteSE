@@ -70,8 +70,7 @@ Our model is composed of three main parts:
 ├── train.py              # Training entry point
 ├── test.py               # Evaluation script
 ├── config.yaml           # Main configuration
-├── data/                 # Dataset loading and preprocessing
-├── utils/                # Helper functions
+├── data_module.py        # Dataset loading and preprocessing
 ├── requirements.txt
 └── README.md
 ```
