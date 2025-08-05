@@ -156,10 +156,10 @@ Our model is composed of three main parts:
 </html>
 
 
-📄 License
+📄 License<br>
 This project is released for academic use only.
 
-💬 Contact
+💬 Contact<br>
 Please reach out through the submission item if you have questions or suggestions.
 
 Reference<br>
