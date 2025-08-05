@@ -94,59 +94,59 @@ Our model is composed of three main parts:
         <td><audio controls src="sample/clean/p232_011.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p232_013.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p232_013.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p232_013.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p232_013.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p232_013.wav"></audio></td>
+        <td><audio controls src="sample/clean/p232_013.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p232_031.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p232_031.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p232_031.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p232_031.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p232_031.wav"></audio></td>
+        <td><audio controls src="sample/clean/p232_031.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p232_046.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p232_046.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p232_046.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p232_046.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p232_046.wav"></audio></td>
+        <td><audio controls src="sample/clean/p232_046.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p232_062.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p232_062.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p232_062.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p232_062.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p232_062.wav"></audio></td>
+        <td><audio controls src="sample/clean/p232_062.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p257-007.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p257-007.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p257-007.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p257-007.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257-007.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257-007.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p257-038.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p257-038.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p257-038.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p257-038.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257-038.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257-038.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p257_073.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p257_073.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p257_073.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p257_073.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257_073.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257_073.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p257_147.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p257_147.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p257_147.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p257_147.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257_147.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257_147.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p232_011.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p232_011.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p232_011.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p232_011.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p232_011.wav"></audio></td>
+        <td><audio controls src="sample/clean/p232_011.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p257_266.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p257_266.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p257_266.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p257_266.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257_266.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257_266.wav"></audio></td>
       </tr>
       <tr>
-        <td><audio controls src="/sample/noisy/p257_290.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p257_290.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p257_290.wav"></audio></td>
+        <td><audio controls src="sample/noisy/p257_290.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257_290.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257_290.wav"></audio></td>
       </tr>
       <!-- … -->
     </tbody>
