@@ -2,7 +2,7 @@
 
 # Anonymous Submission: LiSenNet (Anonymous for Review)
 
-This repository contains the official implementation of **LEN-NET**, a lightweight and effective speech enhancement network designed for real-time deployment on edge devices.
+This repository contains the official implementation of **LTS-NET**, a lightweight and effective speech enhancement network designed for real-time deployment on edge devices.
 
 > 📄 This code is released as part of an anonymous submission to a peer-reviewed conference. Author and affiliation information has been removed for double-blind review.
 
@@ -10,10 +10,10 @@ This repository contains the official implementation of **LEN-NET**, a lightweig
 
 🚀 Overview
 
-LEN-NET consists of:
+LTS-NET consists of:
 - A **Frequency-Time Distortion Balanced Encoder (FTMix)** for rich time-frequency feature extraction.
 - A **Recurrent Dual-path Linear Transformer (RDL)** block for efficient long-range modeling.
-- A **可微分pesq损失** 去替换判别器损失以减小训练消耗.
+- A **Differentiable PESQ loss(DP)** replaces the discriminator loss to reduce training computational cost.
 
 It achieves strong perceptual performance with low computational cost.
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 Download and extract the VoiceBank+DEMAND dataset. Resample all wav files to 16kHz, and move the [clean and noisy wavs](https://datashare.ed.ac.uk/handle/10283/1942) to /Datasets/wavs_clean and /Datasets/wavs_noisy, the test wavs to /Datasets/test_clean and /Datasets/test_noisy. 
 
-respectively. You can also directly download the downsampled [16kHz dataset](https://drive.google.com/drive/folders/19I_thf6F396y5gZxLTxYIojZXC0Ywm8l)(⚠️notice: Using this requires manually selecting two speakers as the test set.)
+Respectively. You can also directly download the downsampled [16kHz dataset](https://drive.google.com/drive/folders/19I_thf6F396y5gZxLTxYIojZXC0Ywm8l)(⚠️notice: Using this requires manually selecting two speakers as the test set.)
 
 
 🏋️ Training
