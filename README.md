@@ -103,15 +103,15 @@ Our model is composed of three main parts:
       <tr>
         <td>p257_375</td>
         <td>
-          <audio controls src="audio/noisy/p257_375.wav">
+          <audio controls src="sample/noisy/p232_011.wav">
             Your browser does not support the audio element.
           </audio>
         </td>
         <td>
-          <audio controls src="audio/cmgan/p257_375.wav"></audio>
+          <audio controls src="sample/enhance/p232_011.wav"></audio>
         </td>
         <td>
-          <audio controls src="audio/clean/p257_375.wav"></audio>
+          <audio controls src="sample/clean/p232_011.wav"></audio>
         </td>
       </tr>
       <!-- 按需再复制 <tr>…</tr> -->
