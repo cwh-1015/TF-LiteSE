@@ -91,9 +91,9 @@ Our model is composed of three main parts:
       <!-- 第一行示例 -->
       <tr>
         <td>p257_375</td>
-        <td><audio controls src="[sample1](https://github.com/cwh-1015/repo/blob/main/sample/noisy/p232_011.wav)"></audio></td>
-        <td><audio controls src="[sample1](https://github.com/cwh-1015/repo/blob/main/sample/enhance/p232_011.wav)"></audio></td>
-        <td><audio controls src="[sample1](https://github.com/cwh-1015/repo/blob/main/sample/clean/p232_011.wav)"></audio></td>
+        <td><audio controls src="https://github.com/cwh-1015/repo/blob/main/sample/noisy/p232_011.wav"></audio></td>
+        <td><audio controls src="https://github.com/cwh-1015/repo/blob/main/sample/enhance/p232_011.wav"></audio></td>
+        <td><audio controls src="https://github.com/cwh-1015/repo/blob/main/sample/clean/p232_011.wav"></audio></td>
       </tr>
       <!-- 按需再复制 <tr>…</tr> -->
       <tr>
