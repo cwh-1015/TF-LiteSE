@@ -74,6 +74,59 @@ Our model is composed of three main parts:
 └── README.md
 ```
 🔊Samples
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VoiceBank+DEMAND Samples</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: center; padding: 8px; border: 1px solid #ccc; }
+    th { background: #f8f8f8; }
+    audio { width: 150px; }
+  </style>
+</head>
+<body>
+
+  <h1>Voice Bank + DEMAND</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Sample Name</th>
+        <th>Noisy</th>
+        <th>CMGAN</th>
+        <th>Clean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 第一行示例 -->
+      <tr>
+        <td>p257_375</td>
+        <td>
+          <audio controls src="audio/noisy/p257_375.wav">
+            Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td>
+          <audio controls src="audio/cmgan/p257_375.wav"></audio>
+        </td>
+        <td>
+          <audio controls src="audio/clean/p257_375.wav"></audio>
+        </td>
+      </tr>
+      <!-- 按需再复制 <tr>…</tr> -->
+      <tr>
+        <td>p232_010</td>
+        <td><audio controls src="audio/noisy/p232_010.wav"></audio></td>
+        <td><audio controls src="audio/cmgan/p232_010.wav"></audio></td>
+        <td><audio controls src="audio/clean/p232_010.wav"></audio></td>
+      </tr>
+      <!-- … -->
+    </tbody>
+  </table>
+
+</body>
+</html>
 
 
 📄 License
