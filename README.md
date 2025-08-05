@@ -91,9 +91,9 @@ Our model is composed of three main parts:
       <!-- 第一行示例 -->
       <tr>
         <td>p232_011</td>
-        <td><audio controls src="/sample/noisy/p232_011.wav"></audio></td>
-        <td><audio controls src="/sample/enhance/p232_011.wav"></audio></td>
-        <td><audio controls src="/sample/clean/p232_011.wav"></audio></td>
+        <td><audio controls src="sample/clean/p232_011.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p232_011.wav"></audio></td>
+        <td><audio controls src="sample/clean/p232_011.wav"></audio></td>
       </tr>
       <tr>
         <td>p232_013</td>
