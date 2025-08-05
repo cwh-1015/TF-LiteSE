@@ -58,20 +58,41 @@ Our model is composed of three main parts:
 
 📁 Project Structure
 bash
-├── train.py              # Training entry point
-├── test.py               # Evaluation script
-├── config.yaml           # Main configuration
+├── Datasets/             # VoiceBank+DEMAND dataset
+
 ├── models/               # Model architecture definitions
-│   └── lisennet.py
+
+│   └── discriminator/    (Optional) Used for discriminator loss
+
+│   └── DP/               # Differentiable PESQ loss
+
+│   └── linformer/        # Model subject
+
+│   └── our_model.py
+
+├── log/                  # Train log
+
+├── result/               # Inference result
+
+├── train.py              # Training entry point
+
+├── test.py               # Evaluation script
+
+├── config.yaml           # Main configuration
+
 ├── data/                 # Dataset loading and preprocessing
+
 ├── utils/                # Helper functions
+
 ├── requirements.txt
+
 └── README.md
-🔒 Anonymous Review Note
-This repository has been anonymized to comply with double-blind review policies. Please do not attempt to de-anonymize the authors.
+
+🔊Samples
+
 
 📄 License
 This project is released for academic use only.
 
 💬 Contact
-Please reach out through the submission system if you have questions or suggestions.
+Please reach out through the submission item if you have questions or suggestions.
