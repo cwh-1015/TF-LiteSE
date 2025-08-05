@@ -8,7 +8,7 @@ This repository contains the official implementation of **LEN-NET**, a lightweig
 
 ---
 
-## 🚀 Overview
+🚀 Overview
 
 LEN-NET consists of:
 - A **Frequency-Time Distortion Balanced Encoder (FTMix)** for rich time-frequency feature extraction.
@@ -19,36 +19,30 @@ It achieves strong perceptual performance with low computational cost.
 
 ---
 
-## 📦 Installation
+📦 Installation
 
-1. Create a virtual environment and activate it:
+Create a virtual environment and activate it:
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-Install dependencies:
-
-bash
-复制
-编辑
+git clone [https://anonymous.4open.science/r/repo-9BE0](https://github.com/cwh-1015/repo)
+cd repo
+conda create -n SEN python=3.7
+conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
-✅ Tested with: Python==3.10.14, PyTorch==2.0.0, PyTorch Lightning==2.0.7
+```
+
+📥 Data preparation
+Download and extract the VoiceBank+DEMAND dataset. Resample all wav files to 16kHz, and move the [clean and noisy wavs](https://datashare.ed.ac.uk/handle/10283/1942) to Datasets/wavs_clean and Datasets/wavs_noisy, the test wavs to Datasets/test_clean and Datasets/test_noisy. respectively. You can also directly download the downsampled [16kHz dataset](https://drive.google.com/drive/folders/19I_thf6F396y5gZxLTxYIojZXC0Ywm8l)(⚠️notice: Using this requires manually selecting two speakers as the test set.)
+
 
 🏋️ Training
-Before training, edit the configuration file ./config.yaml to set:
-
-devices: e.g., [0] for GPU 0
-
-logdir: path to save logs and checkpoints
-
-data.train_dir: directory of training set
-
-batch_size, learning_rate, max_epochs, etc.
+Before training, edit the configuration file ./config.yaml for your experiment.
 
 Then run:
 
-bash
+```bash
 python train.py --config ./config.yaml
+```
 Training logs and checkpoints will be saved under logdir.
 
 🎧 Evaluation
@@ -78,8 +72,6 @@ The network is composed of three main parts:
 
 📁 Project Structure
 bash
-复制
-编辑
 ├── train.py              # Training entry point
 ├── test.py               # Evaluation script
 ├── config.yaml           # Main configuration
