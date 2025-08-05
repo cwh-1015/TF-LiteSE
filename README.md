@@ -120,16 +120,16 @@ Our model is composed of three main parts:
         <td><audio controls src="sample/clean/p232_062.wav"></audio></td>
       </tr>
       <tr>
-        <td>p257-007</td>
-        <td><audio controls src="sample/noisy/p257-007.wav"></audio></td>
-        <td><audio controls src="sample/enhance/p257-007.wav"></audio></td>
-        <td><audio controls src="sample/clean/p257-007.wav"></audio></td>
+        <td>p257_007</td>
+        <td><audio controls src="sample/noisy/p257_007.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257_007.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257_007.wav"></audio></td>
       </tr>
       <tr>
-        <td>p257-038</td>
-        <td><audio controls src="sample/noisy/p257-038.wav"></audio></td>
-        <td><audio controls src="sample/enhance/p257-038.wav"></audio></td>
-        <td><audio controls src="sample/clean/p257-038.wav"></audio></td>
+        <td>p257_038</td>
+        <td><audio controls src="sample/noisy/p257_038.wav"></audio></td>
+        <td><audio controls src="sample/enhance/p257_038.wav"></audio></td>
+        <td><audio controls src="sample/clean/p257_038.wav"></audio></td>
       </tr>
       <tr>
         <td>p257_073</td>
@@ -156,7 +156,7 @@ Our model is composed of three main parts:
         <td><audio controls src="sample/clean/p257_290.wav"></audio></td>
       </tr>
       <tr>
-        <td>p257_316.wav</td>
+        <td>p257_316</td>
         <td><audio controls src="sample/noisy/p257_316.wav"></audio></td>
         <td><audio controls src="sample/enhance/p257_316.wav"></audio></td>
         <td><audio controls src="sample/clean/p257_316.wav"></audio></td>
