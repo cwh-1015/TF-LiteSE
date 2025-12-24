@@ -50,7 +50,7 @@ Training logs and checkpoints will be saved under /log.
 
 📄 Result
 
-<img width="810" height="235" alt="image" src="https://github.com/cwh-1015/TF-LiteSE/blob/main/image.png" />
+<img width="810" height="235" alt="image" src="[https://github.com/cwh-1015/TF-LiteSE/blob/main/image.png](https://anonymous.4open.science/r/repo-9BE0/image.png)" />
 
 
 🎧 Inference
