@@ -48,6 +48,10 @@ python train.py --config ./config.yaml
 ```
 Training logs and checkpoints will be saved under /log.
 
+📄 Result
+<img width="810" height="235" alt="image" src="https://github.com/user-attachments/assets/442bb248-ef97-4dd9-bc70-d4a027184c2e" />
+
+
 🎧 Inference
 ```bash
 python test.py --config ./config.yaml --ckpt_path path/to/checkpoint.ckpt --save_enhanced path/to/savedir
