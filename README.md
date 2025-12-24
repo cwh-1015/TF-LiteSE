@@ -50,7 +50,7 @@ Training logs and checkpoints will be saved under /log.
 
 📄 Result
 
-<img width="810" height="235" alt="image" src="https://github.com/user-attachments/assets/442bb248-ef97-4dd9-bc70-d4a027184c2e" />
+<img width="810" height="235" alt="image" src="https://github.com/cwh-1015/repo/blob/main/image.png" />
 
 
 🎧 Inference
