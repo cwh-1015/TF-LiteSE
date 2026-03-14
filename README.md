@@ -46,8 +46,6 @@ python train.py --config ./config.yaml
 ```
 Training logs and checkpoints will be saved under /log.
 
-📄 Result
-
 <!-- <img width="810" height="235" alt="image" src="sample/image.png" /> -->
 
 
