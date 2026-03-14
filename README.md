@@ -10,10 +10,10 @@
 
 🚀 Overview
 
-LTS-NET consists of:
-- We propose a unified ultra-lightweight time–frequency modeling framework that decouples frequency compression and long-range temporal modeling, enabling global context learning under a strict 36K-parameter constraint. 71
-• We introduce a one-step complex residual phase correction mechanism that compensates for phase ambiguity introduced by aggressive frequency downsampling, avoiding iterative refinement and preserving real-time efficiency. 75
-• We demonstrate that, under extreme parameter constraints, the proposed framework establishes a new performance–efficiency frontier on VoiceBank+DEMAND and low-SNR WSJ0+ESC50 datasets.
+TF-LiteSE consists of:
+- We propose a unified ultra-lightweight time–frequency modeling framework that decouples frequency compression and long-range temporal modeling, enabling global context learning under a strict 36K-parameter constraint.
+- We introduce a one-step complex residual phase correction mechanism that compensates for phase ambiguity introduced by aggressive frequency downsampling, avoiding iterative refinement and preserving real-time efficiency.
+- We demonstrate that, under extreme parameter constraints, the proposed framework establishes a new performance–efficiency frontier on VoiceBank+DEMAND and low-SNR WSJ0+ESC50 datasets.
 
 ---
 
