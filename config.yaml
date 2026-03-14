@@ -3,7 +3,7 @@ accelerator: gpu
 devices: [0]
 
 # log config
-log_dir: ./xiaorong_log
+log_dir: ./log
 resume: null  # if want to resume, specify ckpt path
 
 # dataset config
@@ -49,8 +49,8 @@ model_config:
 weights:
   complex: 0.1
   mag: 0.9
-  adv: 0.01
+  adv: 0.05
   si_sdr: 0.1
   time: 0.2
   pesq: 0.02
-  stoi: 0.05
+  pha: 0.2
