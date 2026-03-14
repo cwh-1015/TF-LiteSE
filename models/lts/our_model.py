@@ -103,6 +103,15 @@ class FTPerceptNet(nn.Module):
         self.proc = nn.Sequential(*[DPL(emb_dim=num_channels, hidden_dim=num_channels*3//2, n_freqs=64, dropout_p=0.1,) for _ in range(n_blocks)])
         self.dec   = SPConvTranspose2d(num_channels, out_channel=2, kernel_size=(1,3), n_freqs=self.n_freqs, r=4)
         self.pad1  = nn.ConstantPad2d((0,1,0,0), 0.0)          # 256→257
+        self.degli_conv = nn.Sequential(
+            nn.Conv2d(2, 12, 3, padding=1),
+            nn.PReLU(12),
+            nn.Conv2d(12, 12, 3, padding=2, dilation=2, groups=12),
+            nn.PReLU(12),
+            nn.Conv2d(12, 12, 1),
+            nn.PReLU(12),
+            nn.Conv2d(12, 2, 3, padding=1),
+        )
         
 
     def apply_stft(self, x, return_complex=True):
@@ -172,24 +181,29 @@ class FTPerceptNet(nn.Module):
         x_ifd = x_if - 2 * torch.pi * (self.hop_length / self.n_fft) * torch.arange(f, device=x.device)[None, None, :]
         return torch.atan2(x_ifd.sin(), x_ifd.cos())
 
-    def griffinlim(self, mag, pha=None, length=None, n_iter=2, momentum=0.99):
+    def degli(self, mag, pha=None, length=None):
         mag = mag.detach()
-        mag = mag ** (1.0 / self.compress_factor) 
-        assert 0 <= momentum < 1
-        momentum = momentum / (1 + momentum)
+        mag = mag ** (1.0 / self.compress_factor)
+        
         if pha is None:
             pha = torch.rand(mag.size(), dtype=mag.dtype, device=mag.device)
+        
+        x = torch.complex(mag * pha.cos(), mag * pha.sin())
+        
+        cur_pha = x.angle()
+        x_mag = torch.complex(mag * cur_pha.cos(), mag * cur_pha.sin())
+        
 
-        tprev = torch.tensor(0.0, dtype=mag.dtype, device=mag.device)
-        for _ in range(n_iter):
-            inverse = self.apply_istft(torch.complex(mag * pha.cos(), mag * pha.sin()), length=length)
-            rebuilt = self.apply_stft(inverse)
-            pha = rebuilt
-            pha = pha - tprev.mul_(momentum)
-            pha = pha.angle()
-            tprev = rebuilt
-
-        return pha
+        # (B,T,F) -> 4-channel map; keep explicit channel dimension
+        combined = torch.stack(
+            [x_mag.real, x_mag.imag], dim=1
+        )  # [B, 4, T, F]
+        
+        delta_ri = self.degli_conv(combined)  # [B,2,T,F]
+        delta = torch.complex(delta_ri[:, 0], delta_ri[:, 1])  # [B,T,F]
+        x = x + delta
+        
+        return x.angle()
 
     def forward(self, src, tgt=None):              
 
@@ -216,7 +230,7 @@ class FTPerceptNet(nn.Module):
 
         est_mag = (x[:, 0] + 1e-8) * src_mag + (x[:, 1] + 1e-8) * src_mag
 
-        est_pha = self.griffinlim(est_mag.detach(), src_pha, tgt.size(-1))
+        est_pha = self.degli(est_mag.detach(), src_pha, tgt.size(-1))
         est_spec = torch.complex(est_mag * est_pha.cos(), est_mag * est_pha.sin())
         est = self.apply_istft(self.power_uncompress(est_spec), length=tgt.size(-1))
 
