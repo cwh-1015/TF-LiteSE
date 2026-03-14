@@ -2,7 +2,7 @@
 
 📄 Abstract
 
-> Recently, deep learning-based speech enhancement methods have made significant progress in accurately recovering ideal clear speech components from noisy signals. However, edge devices such as mobile and IoT terminals are often constrained by computation, memory, and power consumption, rendering the deployment of large-scale deep neural networks impractical. To address this challenge, we propose \emph{TF-LiteSE}, a lightweight time-frequency domain speech enhancement network specifically designed for real-time edge deployment. Our design integrates a global time-frequency downsampling module followed by a dual-path LinearFormer time-frequency module, which work together to capture long-term temporal dependencies while preserving fine-grained low-frequency details. With only $35\mathrm{K}$ parameters, our model achieves a PESQ score of 3.21 on the \textsc{VoiceBank-DEMAND} dataset and a real-time factor of $\mathrm{RTF}=0.018$, demonstrating its practicality and generalizability in resource-constrained environments.
+> Recently, deep learning-based speech enhancement methods have made significant progress in accurately recovering ideal clear speech components from noisy signals. However, edge devices such as mobile and IoT terminals are often constrained by computation, memory, and power consumption, rendering the deployment of large-scale deep neural networks impractical. To address this challenge, we propose TF-LiteSE, a lightweight time-frequency domain speech enhancement network specifically designed for real-time edge deployment. Our design1 integrates a global time-frequency downsampling module followed by a dual-path LinearFormer time-frequency module, which work together to capture long-term temporal dependencies while preserving fine-grained low-frequency details. With only 36K parameters, our model achieves a PESQ score of 3.21 on the VoiceBank+DEMAND dataset and a real-time factor (RTF) of 0.018, demonstrating its practicality in resource constrained environments.
 ---
 ⚠️Notice
 > This code is released as part of an anonymous submission to a peer-reviewed conference. Author and affiliation information has been removed for double-blind review.
@@ -11,11 +11,9 @@
 🚀 Overview
 
 LTS-NET consists of:
-- A **Frequency-Time Distortion Balanced Encoder (FTMix)** for rich time-frequency feature extraction.
-- A **Recurrent Dual-path Linear Transformer (RDL)** block for efficient long-range modeling.
-- A **Differentiable PESQ loss(DP)** replaces the discriminator loss to reduce training computational cost.
-
-It achieves strong perceptual performance with low computational cost.
+- We propose a unified ultra-lightweight time–frequency modeling framework that decouples frequency compression and long-range temporal modeling, enabling global context learning under a strict 36K-parameter constraint. 71
+• We introduce a one-step complex residual phase correction mechanism that compensates for phase ambiguity introduced by aggressive frequency downsampling, avoiding iterative refinement and preserving real-time efficiency. 75
+• We demonstrate that, under extreme parameter constraints, the proposed framework establishes a new performance–efficiency frontier on VoiceBank+DEMAND and low-SNR WSJ0+ESC50 datasets.
 
 ---
 
@@ -24,10 +22,10 @@ It achieves strong perceptual performance with low computational cost.
 Create a virtual environment and activate it:
 
 ```bash
-git clone https://anonymous.4open.science/r/repo-9BE0.git
+git clone https://anonymous.4open.science/r/TF-LiteSE.git
 cd repo
-conda create -n SEN python=3.7
-conda activate SEN
+conda create -n se python=3.7
+conda activate se
 pip install -r requirements.txt
 ```
 
