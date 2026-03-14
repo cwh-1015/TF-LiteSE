@@ -1,0 +1,14 @@
+linformer==0.2.3
+linear-attention-transformer==0.19.1
+numpy==1.21.5
+pesq==0.0.4
+pytorch-lightning==1.9.5
+PyYAML==6.0.1
+scipy==1.7.3
+soundfile==0.13.0
+torch==1.13.1
+torchmetrics==0.11.4
+torchaudio==0.13.1
+torchtyping==0.1.5
+torchvision==0.9.1
+tqdm==4.67.1
